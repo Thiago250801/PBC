@@ -45,11 +45,4 @@ public class Pessoa {
         this.email = email;
     }
 
-    public PropertyChangeSupport getChangeSupport() {
-        return changeSupport;
-    }
-
-    public void setChangeSupport(PropertyChangeSupport changeSupport) {
-        this.changeSupport = changeSupport;
-    }
 }
