@@ -13,6 +13,14 @@ public class TestaPessoasProprietis {
         pessoa.setNome("Thiago");
         pessoa.setNome("Thiago Arthur");
         pessoa.setNome("Thiago Arthur Lourenco Lima");
+
+        pessoa.setIdade(18);
+        pessoa.setIdade(19);
+        pessoa.setIdade(20);
+
+        pessoa.setEmail("thiago@gmail.com");
+        pessoa.setEmail("thagoArthur@gmail.com");
+        pessoa.setEmail("Thlimabsgim@gmail.com");
     }
 
 }

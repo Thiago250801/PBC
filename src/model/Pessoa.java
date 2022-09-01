@@ -40,7 +40,11 @@ public class Pessoa {
     }
 
     public void setIdade(int idade) {
+
+        int oldValue = this.idade;
         this.idade = idade;
+
+        changeSupport.firePropertyChange("idade", oldValue, this.idade);
     }
 
     public String getEmail() {
@@ -48,7 +52,11 @@ public class Pessoa {
     }
 
     public void setEmail(String email) {
+
+        String oldValue = this.email;
         this.email = email;
+
+        changeSupport.firePropertyChange("email", oldValue, this.email);
     }
 
 }
