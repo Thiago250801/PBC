@@ -26,7 +26,13 @@ public class Pessoa {
     }
 
     public void setNome(String nome) {
+
+        String oldValue = this.nome;
         this.nome = nome;
+
+        changeSupport.firePropertyChange("nome", oldValue, this.nome);
+
+
     }
 
     public int getIdade() {
